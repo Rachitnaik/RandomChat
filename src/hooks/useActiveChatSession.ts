@@ -10,7 +10,7 @@ export const useActiveChatSession = () => {
   useEffect(() => {
     if (!user) return;
 
-    const sessionsRef = collection(dbFirestore, "chatSessions");
+    // const sessionsRef = collection(dbFirestore, "chatSessions");
     //const q = query(sessionsRef, where("participants", "array-contains", user.uid));
     const q = query(
     collection(dbFirestore, "chatSessions"),
